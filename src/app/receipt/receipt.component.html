@@ -1,0 +1,10 @@
+<div>
+    <label for="reportType">Report Type (A4 or Receipt):</label>
+    <input type="text" id="reportType" #reportType>
+  
+    <label for="receiptNumber">Receipt Number:</label>
+    <input type="text" id="receiptNumber" #receiptNumber>
+  
+    <button (click)="onDownloadReport(reportType.value, receiptNumber.value)">Download Report</button>
+  </div>
+  
